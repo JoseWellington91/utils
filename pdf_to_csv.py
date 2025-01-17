@@ -21,6 +21,7 @@ with open('dados.csv', 'w') as csvfile:
             # Extrai o texto de cada página do PDF
             for page in pages:
                 text += page.extract_text()
+                
         data = text
         linhas = data.splitlines()
 
